@@ -1,10 +1,21 @@
 <!doctype html>
+<head>
+    <link rel="stylesheet"  href="Css.css">
+</head>
 <header>
     <h1>
         Todos
     </h1>
     <input autofocus type="text" placeholder="What needs to be done?">
-
+    <!-- <style>
+        div {
+        background-color: green;
+        border: 5px solid red;
+        margin: 5px 10px 15px 20px;
+        padding: 20px 15px 10px 5px;
+        }
+        </style> -->
+        
 </header>
 <section>
     <input type="checkbox" checked="false" id="toggle-all">
@@ -14,7 +25,7 @@
         <li>
             <div><input type="checkbox" id="">
                 <label>Todo Item</label>
-                <button>Remove Todo Item</button>
+                <button id="btn-rm">Remove Todo Item</button>
             </div>
         </li>
     </ol>
@@ -22,11 +33,11 @@
 <footer>
     <span>
         <strong>1</strong>
-        <span>Item(s) left</span>
+        <span class="sp-items">Item(s) left</span>
     </span>
     <ul>
         <a href="#/all">
-            <li>All</li>
+            <li >All</li>
         </a>
         <a href="#/Active">
             <li>Active</li>

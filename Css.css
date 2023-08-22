@@ -1,0 +1,16 @@
+div {
+    background-color: green;
+    border: 5px solid red;
+margin: 5px 10px 15px 20px;
+padding: 20px 15px 10px 5px;
+}
+
+
+#btn-rm {
+
+    background-color: blue;
+}
+
+.sp-items{
+    border: 1px solid black;
+}

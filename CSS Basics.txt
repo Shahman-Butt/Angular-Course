@@ -1,0 +1,47 @@
+The Box Model
+Recall that in HTML, each element is a part of the Document Object Model
+(DOM) Tree which is a tree-like representation of the elements on our
+webpage.
+In addition, each element is also visually surrounded by a box, allowing us
+to decorate its:
+- Margin (top, right. bottom, left)
+- Border
+- Padding (top, right. bottom, left)
+- Content
+These four items (margin, border, padding, and content) make up the box
+model.
+
+Margin
+------
+Border
+-------
+Padding
+-------
+content
+-------
+
+
+For stylesheets, the rel attribute should always be set to "stylesheet" to indicate that the linked resource is a CSS stylesheet that should 
+be applied to the current document for styling purposes.
+<link rel="stylesheet" href="styles.css">
+p {
+    /* Your styles here */
+}
+.my-class {
+    /* Your styles here */
+}
+#my-id {
+    /* Your styles here */
+}
+
+Margin & Padding
+You’ll notice that both the margin and padding CSS attributes have four
+values, denoted in pixel (px). A pixel in CSS is defined as of 1 inch. In
+respective order, these pixel values indicate the measurements of the top,
+right, bottom, and left sides of the margin and padding of our first <div>
+element.
+You can easily remember this order with this mnemonic device: “Going
+clockwise, Margin and Padding are TRouBLe!” (where T = top, R = right, B =
+bottom, and L = left).
+
+CSS SPECIFICITY :
