@@ -1,0 +1,68 @@
+The HTML Document Object Model
+(DOM)---
+ 
+
+The DOM is essentially the
+blueprint of the web page and is represented as a tree of “Objects.”
+HTML is case insensitive.
+
+Semantic Elements
+Let’s start with semantic elements. A semantic element clearly describes its
+meaning to both the browser and the developer. Some examples of
+semantic elements include: <form>, <table>, and <article>.
+
+Non-semantic Elements
+Examples of non-semantic elements include: <div> and <span>
+Unlike semantic elements, non-semantic elements don’t give us any hints as
+to what type of content is within them. A <div> tag, for example, can divide
+a page or it can just be a container for any type of content. Likewise, a
+<span> tag can contain text, take the form of a button, hold a link to another
+page in it, etc.
+
+
+<div>
+A <div> tag represents a division in HTML content. It serves as a nonsemantic section or container for any kind of content. A <div> is known as
+a block-level element.
+1) It always starts on a new line on the webpage
+2) It automatically has upper and lower spacing (margin) added to it
+3) It always takes up the full width available within its parent element,
+stretching out as far left and right as it can
+4) It always occupies vertical space equal to the height of its contents,
+creating a “block”
+
+
+<span>
+A <span> tag can enclose text or just a part of an HTML document. It is a lot
+like the <div> tag, except it’s an inline-level element.
+Unlike a block-level element, an inline element:
+1) Does not start on a new line
+2) Only takes up as much width as necessary
+
+The main difference between <div> and <span> is that a <div> tag will start
+its own “container” or “box” and take up the whole width of the page. On
+the other hand, <span> can occupy any part of a page, making it a little bit
+more flexible.
+
+<ol>, <ul>, and <dl>
+An ordered list <ol> is a number-ordered list.
+An unordered list <ul> appears as a series of bullet points.
+A description list <dl> can be used with words and their respective
+definitions.
+<li>, <dt>, and <dd>
+Ordered and unordered lists have list items which use the <li> tag.
+A description list has two child tags, a description tag <dt> and a
+description definition tag <dd>
+
+
+<a>
+The <a> tag defines a hyperlink, linking one page to another.
+The href attribute in particular defines the URL of the page a link goes to.
+
+<input>
+The appearance of an <input> tag can change depending on the value of its
+type attribute. An <input> tag specifies a field where a user can enter data.
+<label>
+The <label> tag will define the label for our <input> form fields. The for
+attribute connects the label to its respective form field, as long as that form
+field element has the exact same value for its id attribute.
+A <button> can take the form of text or even an image.
