@@ -1,41 +1,32 @@
 <!doctype html>
-<head>
+<section class="todoapp">
+<header class="header">
     <link rel="stylesheet"  href="Css.css">
-</head>
-<header>
+    
     <h1>
         Todos
     </h1>
-    <input autofocus type="text" placeholder="What needs to be done?">
-    <!-- <style>
-        div {
-        background-color: green;
-        border: 5px solid red;
-        margin: 5px 10px 15px 20px;
-        padding: 20px 15px 10px 5px;
-        }
-        </style> -->
-        
+    <input class="new-todo" autofocus type="text" placeholder="What needs to be done?">
 </header>
-<section>
-    <input type="checkbox" checked="false" id="toggle-all">
+<section class="main">
+    <input type="checkbox" checked="false" id="toggle-all" class="toggle-all">
     <label for="toggle-all">Mark all as Completed</label>
 
-    <ol>
-        <li>
-            <div><input type="checkbox" id="">
+    <ul class="todo-list">
+        <li class="todo-item">
+            <div class="view-todo"><input type="checkbox" id="">
                 <label>Todo Item</label>
-                <button id="btn-rm">Remove Todo Item</button>
+                <button class="destroy" id="btn-rm">Remove Todo Item</button>
             </div>
         </li>
-    </ol>
+    </ul>
 </section>
-<footer>
-    <span>
+<footer class="footer">
+    <span class="todo-count">
         <strong>1</strong>
         <span class="sp-items">Item(s) left</span>
     </span>
-    <ul>
+    <ul class="filters">
         <a href="#/all">
             <li >All</li>
         </a>
@@ -45,9 +36,15 @@
         <a href="#/Completed">
             <li>Completed
         </a>
-    </ul>
-    <button>Clear Completed Todos</button>
+    </ul> 
+    <button class="clear-completed">Clear Completed Todos</button>
     </span>
 </footer>
-
+</section>
 </html>
+
+
+<!-- <div class="dashed-box" id="valentine">
+    Happy Valentine's Day!
+    </div>
+     -->

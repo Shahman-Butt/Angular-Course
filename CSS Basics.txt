@@ -45,3 +45,46 @@ clockwise, Margin and Padding are TRouBLe!” (where T = top, R = right, B =
 bottom, and L = left).
 
 CSS SPECIFICITY :
+This specificity scoring system styles elements according to their calculated
+rank. In this system, each style has a score:
+- Inline styles (e.g. <div style="border: 1px solid black;">) have a score
+of 1000
+- IDs have a score of 100
+- Classes have a score of 10
+- Elements (e.g. <div> with no style, class, or id attribute) have a score of
+1
+
+
+With the font property, you can set the following property values in order:
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+
+Static (Default):
+Elements are positioned according to their normal flow in the document.
+ The "top," "right," "bottom," and "left" properties have no effect on static-positioned elements.
+
+Relative:
+Elements are positioned relative to their normal position in the document flow.
+ You can use the "top," "right," "bottom," and "left" properties to adjust the element's position 
+ relative to where it would be in normal flow.
+
+Absolute:
+Elements are positioned relative to the nearest positioned ancestor 
+(an ancestor with a position value other than "static"), or the containing block 
+if there is no positioned ancestor. This can lead to an element being taken out of 
+the normal document flow. The "top," "right," "bottom," and "left" properties are used
+ to specify the position.
+
+Fixed:
+Elements are positioned relative to the viewport (the browser window). 
+The element remains fixed in its position even when the page is scrolled. 
+The "top," "right," "bottom," and "left" properties are used to specify the position.
+
+Sticky:
+Elements are positioned based on the user's scroll position.
+ The element behaves like "relative" positioning until the viewport scrolls
+  to a certain point, at which it becomes "fixed" positioning.
+
